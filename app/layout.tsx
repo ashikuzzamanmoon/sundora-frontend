@@ -1,14 +1,16 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Navbar from '@/components/layout/Navbar/Navbar'; 
-import Footer from '@/components/layout/Footer/Footer';
+// app/layout.tsx
 
-const inter = Inter({ subsets: ['latin'] });
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Footer from "@/components/layout/Footer/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Sundora - Your True Experience',
-  description: 'A frontend project of Sundora website.',
+  title: "Sundora Frontend",
+  description: "A frontend clone of Sundora website.",
 };
 
 export default function RootLayout({
@@ -17,13 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
-        <Navbar /> {/* Add Navbar here */}
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer /> {/* Add Footer here */}
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

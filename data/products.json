@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Lip Balm",
+    "price": 600,
+    "image": "/images/products/lip-balm.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lip Pencil",
+    "price": 1200,
+    "image": "/images/products/lip-pencil.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Water Lip Stain",
+    "price": 2600,
+    "image": "/images/products/lip-stain.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Lip Balm SPF 15",
+    "price": 4000,
+    "image": "/images/products/lip-balm-spf.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Extra Lip Tint Balm",
+    "price": 5200,
+    "image": "/images/products/lip-tint.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Foundation SPF 20",
+    "price": 6500,
+    "image": "/images/products/foundation.jpg"
+  }
+]
