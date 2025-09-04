@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white sticky top-0 z-50 shadow-sm">
+    <header className="bg-white top-0 shadow-sm">
       {/* ===== TOP BAR ===== */}
       <div className="bg-[#2a676b] text-white">
         <div className="container mx-auto px-6 py-3 flex justify-center items-center text-sm space-x-12">
@@ -90,7 +90,7 @@ const Navbar = () => {
       </div>
 
       {/* ===== MAIN HEADER ===== */}
-      <div className="container mx-auto px-6 py-6 flex justify-between items-center relative">
+      <div className="mx-auto px-6 py-6 flex justify-between items-center relative">
         <div className="w-1/3"></div>
         <div className="w-1/3 flex justify-center">
           <Link href="/">
@@ -108,7 +108,7 @@ const Navbar = () => {
         <div className="w-1/3 flex justify-end items-center space-x-4">
           <div ref={searchContainerRef} className="flex items-center">
             <div
-              className={`flex items-center transition-all duration-300 ease-in-out overflow-hidden ${
+              className={`flex items-center bg-[#f2f6f6] transition-all duration-300 ease-in-out overflow-hidden ${
                 isSearchOpen ? "w-64" : "w-0"
               }`}
             >
@@ -125,7 +125,7 @@ const Navbar = () => {
                   placeholder="Search for products..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                  className="w-full pl-9 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-300"
                 />
               </div>
             </div>
@@ -150,7 +150,7 @@ const Navbar = () => {
 
           {/* search result dropdown */}
           {isSearchOpen && searchTerm && (
-            <div className="absolute top-full right-32 -mt-4 w-64 bg-white border rounded-lg shadow-lg">
+            <div className="absolute top-full right-32 -mt-4 w-64 bg-white shadow-2xl z-50">
               <ul className="divide-y max-h-96 overflow-y-auto">
                 {searchResults.map((product) => (
                   <li key={product.id}>
@@ -193,7 +193,7 @@ const Navbar = () => {
       </div>
 
       {/* ===== NAVIGATION LINKS ===== */}
-      <nav className="">
+      <nav className="sticky top-0 z-40 bg-white">
         <div className="container mx-auto px-6 flex justify-center items-center h-12">
           <ul className="flex items-center space-x-16 text-sm font-medium tracking-wider">
             {navLinks.map((link) => (

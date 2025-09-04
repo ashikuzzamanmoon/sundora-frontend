@@ -3,19 +3,19 @@
     "id": 1,
     "name": "Lip Balm",
     "price": 600,
-    "image": "/images/products/lip-balm.jpg"
+    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Balm"
   },
   {
     "id": 2,
     "name": "Lip Pencil",
     "price": 1200,
-    "image": "/images/products/lip-pencil.jpg"
+    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Pencil"
   },
   {
     "id": 3,
     "name": "Water Lip Stain",
     "price": 2600,
-    "image": "/images/products/lip-stain.jpg"
+    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Stain"
   },
   {
     "id": 4,
