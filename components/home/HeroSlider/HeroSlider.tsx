@@ -71,9 +71,9 @@ const HeroSlider = () => {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-20">
+      <div className="absolute bottom-10 md:bottom-16 left-1/2 -translate-x-1/2 z-20">
         <Link href="/products">
-          <button className="px-7 py-2 rounded-lg bg-gray-700 bg-opacity-70 text-white font-semibold border border-gray-400 hover:bg-gray-800 hover:bg-opacity-80 transition-colors duration-300">
+          <button className="px-2 md:px-7 py-1 md:py-2 text-xs md:text-sm rounded bg-gray-700 bg-opacity-70 text-white font-semibold border border-gray-400 hover:bg-gray-800 hover:bg-opacity-80 transition-colors duration-300">
             SHOP NOW
           </button>
         </Link>
@@ -85,14 +85,14 @@ const HeroSlider = () => {
         onClick={scrollPrev}
         aria-label="Previous slide"
       >
-        <ChevronLeft size={28} />
+        <ChevronLeft size={24} />
       </button>
       <button
         className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md z-20"
         onClick={scrollNext}
         aria-label="Next slide"
       >
-        <ChevronRight size={28} />
+        <ChevronRight size={24} />
       </button>
 
       {/* Dots Indicator */}
