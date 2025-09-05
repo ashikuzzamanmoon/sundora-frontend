@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Acqua Di Parma",
+    "logo": "/images/brands/acqua-di-parma.webp",
+    "href": "/brands/acqua-di-parma"
+  },
+  {
+    "name": "Banderas",
+    "logo": "/images/brands/banderas.webp",
+    "href": "/brands/banderas"
+  },
+  {
+    "name": "United Colors of Benetton",
+    "logo": "/images/brands/benetton.webp",
+    "href": "/brands/benetton"
+  },
+  {
+    "name": "Carolina Herrera",
+    "logo": "/images/brands/carolina-herrera.webp",
+    "href": "/brands/carolina-herrera"
+  },
+  {
+    "name": "Giorgio Armani",
+    "logo": "/images/brands/giorgio-armani.webp",
+    "href": "/brands/giorgio-armani"
+  },
+  {
+    "name": "Jean Paul",
+    "logo": "/images/brands/jean-paul.webp",
+    "href": "/brands/jean-paul"
+  },
+  {
+    "name": "Prada",
+    "logo": "/images/brands/prada.webp",
+    "href": "/brands/prada"
+  },
+  {
+    "name": "Rabanne",
+    "logo": "/images/brands/rabanne.webp",
+    "href": "/brands/rabanne"
+  },
+  {
+    "name": "Yankee Candle",
+    "logo": "/images/brands/yankee-candle.webp",
+    "href": "/brands/yankee-candle"
+  }
+]

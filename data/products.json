@@ -1,38 +1,74 @@
 [
   {
     "id": 1,
-    "name": "Lip Balm",
-    "price": 600,
-    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Balm"
+    "brand": "RABANNE",
+    "name": "1 Million Parfum",
+    "type": "Eau De Parfum",
+    "originalPrice": 8700,
+    "price": 7395,
+    "discount": 30,
+    "image": "/images/products/1-million.webp",
+    "isFavourite": true,
+    "isNewArrival": false
   },
   {
     "id": 2,
-    "name": "Lip Pencil",
-    "price": 1200,
-    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Pencil"
+    "brand": "VIKTOR & ROLF",
+    "name": "Spicebomb Extreme Eau De Parfum",
+    "type": "Eau De Parfum",
+    "originalPrice": 10100,
+    "price": 6060,
+    "discount": 40,
+    "image": "/images/products/spicebomb.webp",
+    "isFavourite": true,
+    "isNewArrival": false
   },
   {
     "id": 3,
-    "name": "Water Lip Stain",
-    "price": 2600,
-    "image": "https://placehold.co/100x100/FBF3D8/333333?text=Lip+Stain"
+    "brand": "AZZARO",
+    "name": "The Most Wanted Parfum",
+    "type": "Eau De Parfum",
+    "originalPrice": 12300,
+    "price": 9840,
+    "discount": 20,
+    "image": "/images/products/azzaro.webp",
+    "isFavourite": true,
+    "isNewArrival": false
   },
   {
     "id": 4,
-    "name": "Lip Balm SPF 15",
-    "price": 4000,
-    "image": "/images/products/lip-balm-spf.jpg"
+    "brand": "MAC",
+    "name": "Powder Kiss Lipstick",
+    "type": "Lipstick",
+    "originalPrice": 3500,
+    "price": 2800,
+    "discount": 20,
+    "image": "/images/products/mac-lipstick.webp",
+    "isFavourite": true,
+    "isNewArrival": false
   },
   {
     "id": 5,
-    "name": "Extra Lip Tint Balm",
-    "price": 5200,
-    "image": "/images/products/lip-tint.jpg"
+    "brand": "RABANNE",
+    "name": "Phantom Intense EDP",
+    "type": "Eau De Parfum",
+    "originalPrice": 9100,
+    "price": 7280,
+    "discount": 40,
+    "image": "/images/products/phantom.webp",
+    "isFavourite": false,
+    "isNewArrival": false
   },
   {
     "id": 6,
-    "name": "Foundation SPF 20",
-    "price": 6500,
-    "image": "/images/products/foundation.jpg"
+    "brand": "XERJOFF",
+    "name": "1861 Naxos Perfume",
+    "type": "Eau De Parfum",
+    "originalPrice": 32900,
+    "price": 23023,
+    "discount": 30,
+    "image": "/images/products/1861-naxos.webp",
+    "isFavourite": true,
+    "isNewArrival": false
   }
 ]

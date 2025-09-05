@@ -193,7 +193,7 @@ const Navbar = () => {
       </div>
 
       {/* ===== NAVIGATION LINKS ===== */}
-      <nav className="sticky top-0 z-40 bg-white">
+      <nav className="hidden md:block sticky top-0 z-40 bg-white">
         <div className="container mx-auto px-6 flex justify-center items-center h-12">
           <ul className="flex items-center space-x-16 text-sm font-medium tracking-wider">
             {navLinks.map((link) => (
