@@ -1,5 +1,6 @@
 // app/page.tsx
 import AnnouncementBar from "@/components/common/AnnouncementBar";
+import AboutSection from "@/components/home/AboutSection/AboutSection";
 import CategorySection from "@/components/home/CategorySection/CategorySection";
 import FeaturedBrands from "@/components/home/FeaturedBrands/FeaturedBrands";
 import GenderSection from "@/components/home/GenderSection/GenderSection";
@@ -28,6 +29,7 @@ const Home = () => {
       <CategorySection />
       <GenderSection />
       <StoriesSection />
+      <AboutSection />
     </>
   );
 };
