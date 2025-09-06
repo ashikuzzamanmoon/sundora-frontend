@@ -5,6 +5,7 @@ import FeaturedBrands from "@/components/home/FeaturedBrands/FeaturedBrands";
 import GenderSection from "@/components/home/GenderSection/GenderSection";
 import HeroSlider from "@/components/home/HeroSlider/HeroSlider";
 import ProductCarousel from "@/components/home/shared/ProductCarousel/ProductCarousel";
+import StoriesSection from "@/components/home/StoriesSection/StoriesSection";
 import allProducts from "@/data/products.json";
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       <ProductCarousel title="NEW ARRIVALS" products={newArrivalProducts} />
       <CategorySection />
       <GenderSection />
+      <StoriesSection />
     </>
   );
 };

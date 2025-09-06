@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Share the Joy of Eid Gifting with Sundora",
+    "image": "/images/stories/eid-gifting.webp",
+    "href": "/stories/eid-gifting"
+  },
+  {
+    "id": 2,
+    "title": "The Best Fragrances within Tk 5,000",
+    "description": "Elevate Your Fragrance Game Without Breaking the Bank",
+    "image": "/images/stories/best-deals.webp",
+    "href": "/stories/best-deals"
+  },
+  {
+    "id": 3,
+    "title": "Sundora Anniversary Sale",
+    "description": "Celebrating Sundora's Anniversary!",
+    "image": "/images/stories/anniversary.webp",
+    "href": "/stories/anniversary-sale"
+  }
+]
