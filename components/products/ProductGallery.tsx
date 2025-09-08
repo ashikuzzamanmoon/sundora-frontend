@@ -1,10 +1,10 @@
 // components/products/ProductGallery.tsx
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
-import Image from 'next/image';
-import useEmblaCarousel from 'embla-carousel-react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ProductGalleryProps {
   images: string[];
@@ -12,18 +12,25 @@ interface ProductGalleryProps {
   discount: number;
 }
 
-const ProductGallery = ({ images, productName, discount }: ProductGalleryProps) => {
-   const [selectedIndex, setSelectedIndex] = useState(0);
+const ProductGallery = ({
+  images,
+  productName,
+  discount,
+}: ProductGalleryProps) => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
+    containScroll: "keepSnaps",
     dragFree: true,
   });
 
-  const onThumbClick = useCallback((index: number) => {
-    if (!emblaMainApi || !emblaThumbsApi) return;
-    emblaMainApi.scrollTo(index);
-  }, [emblaMainApi, emblaThumbsApi]);
+  const onThumbClick = useCallback(
+    (index: number) => {
+      if (!emblaMainApi || !emblaThumbsApi) return;
+      emblaMainApi.scrollTo(index);
+    },
+    [emblaMainApi, emblaThumbsApi]
+  );
 
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return;
@@ -34,17 +41,23 @@ const ProductGallery = ({ images, productName, discount }: ProductGalleryProps) 
   useEffect(() => {
     if (!emblaMainApi) return;
     onSelect();
-    emblaMainApi.on('select', onSelect);
-    emblaMainApi.on('reInit', onSelect);
-    
+    emblaMainApi.on("select", onSelect);
+    emblaMainApi.on("reInit", onSelect);
+
     return () => {
-        emblaMainApi.off('select', onSelect);
-        emblaMainApi.off('reInit', onSelect);
-    }
+      emblaMainApi.off("select", onSelect);
+      emblaMainApi.off("reInit", onSelect);
+    };
   }, [emblaMainApi, onSelect]);
 
-  const scrollPrev = useCallback(() => emblaMainApi?.scrollPrev(), [emblaMainApi]);
-  const scrollNext = useCallback(() => emblaMainApi?.scrollNext(), [emblaMainApi]);
+  const scrollPrev = useCallback(
+    () => emblaMainApi?.scrollPrev(),
+    [emblaMainApi]
+  );
+  const scrollNext = useCallback(
+    () => emblaMainApi?.scrollNext(),
+    [emblaMainApi]
+  );
 
   return (
     <div>
@@ -53,7 +66,10 @@ const ProductGallery = ({ images, productName, discount }: ProductGalleryProps) 
         <div className="overflow-hidden rounded-lg" ref={emblaMainRef}>
           <div className="flex">
             {images.map((src, index) => (
-              <div className="relative flex-[0_0_100%] aspect-square" key={index}>
+              <div
+                className="relative flex-[0_0_100%] aspect-square"
+                key={index}
+              >
                 <Image
                   src={src}
                   alt={`${productName} image ${index + 1}`}
@@ -70,9 +86,19 @@ const ProductGallery = ({ images, productName, discount }: ProductGalleryProps) 
             -{discount}%
           </div>
         )}
-        
-        <button onClick={scrollPrev} className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-md hover:bg-white transition"><ChevronLeft /></button>
-        <button onClick={scrollNext} className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-md hover:bg-white transition"><ChevronRight /></button>
+
+        <button
+          onClick={scrollPrev}
+          className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-md hover:bg-white transition"
+        >
+          <ChevronLeft />
+        </button>
+        <button
+          onClick={scrollNext}
+          className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-md hover:bg-white transition"
+        >
+          <ChevronRight />
+        </button>
       </div>
 
       {/* --- Thumbnails Carousel --- */}
@@ -83,11 +109,16 @@ const ProductGallery = ({ images, productName, discount }: ProductGalleryProps) 
               <button
                 onClick={() => onThumbClick(index)}
                 key={index}
-                className={`flex-[0_0_22%] transition-opacity`}
+                className={`flex-[0_0_15%] transition-opacity`}
               >
-                <div className={`relative aspect-square border-2 rounded-md overflow-hidden
-                  ${index === selectedIndex ? 'border-gray-900 opacity-100' : 'border-transparent opacity-60'}`
-                }>
+                <div
+                  className={`relative aspect-square border-2 rounded-md overflow-hidden
+                  ${
+                    index === selectedIndex
+                      ? "border-gray-900 opacity-100"
+                      : "border-transparent opacity-60"
+                  }`}
+                >
                   <Image
                     src={src}
                     alt={`${productName} thumbnail ${index + 1}`}

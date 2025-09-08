@@ -18,6 +18,8 @@ import {
 import ProductGallery from "@/components/products/ProductGallery";
 import { useCart } from "@/context/CartContext";
 import toast from "react-hot-toast";
+import AuthenticityBadges from "@/components/products/AuthenticityBadges";
+import RecommendedProducts from "@/components/products/RecommendedProducts";
 
 interface BaseVariant {
   id: number;
@@ -56,7 +58,6 @@ interface ProductWithColorVariants extends BaseProduct {
 // One Union Type for all types of products
 type Product = ProductWithSizeVariants | ProductWithColorVariants;
 
-
 const allProducts: Product[] = allProductsData as Product[];
 
 const ProductDetailsPage = () => {
@@ -87,11 +88,19 @@ const ProductDetailsPage = () => {
 
   const accordionData = [
     { title: "DESCRIPTION", content: product.description },
-    { title: "HOW TO USE", content: "Spray the perfume on pulse areas." },
+    {
+      title: "AUTHENTICITY",
+      content: <AuthenticityBadges />,
+    },
     {
       title: "SHIPPING & DELIVERY",
       content:
         "Free Delivery for orders valued over ৳ 5000.00 before tax. Standard Delivery: 2 - 3 working days inside Dhaka; 5 - 7 working days outside Dhaka.",
+    },
+    {
+      title: "PAYMENT & RETURN",
+      content:
+        "Payments can be made online using credit cards or mobile wallets for all orders. Cash on Delivery is available for orders valued under ৳ 100000.00. Easy Return and Refund Process.",
     },
   ];
 
@@ -126,7 +135,7 @@ const ProductDetailsPage = () => {
               onClick={() => setSelectedVariant(variant)}
               className={`px-4 py-2 text-sm border rounded-md ${
                 selectedVariant.id === variant.id
-                  ? "bg-gray-800 text-white"
+                  ? "bg-[#2a676b] text-white"
                   : "bg-white text-gray-700"
               }`}
             >
@@ -285,6 +294,10 @@ const ProductDetailsPage = () => {
             </div>
           </div>
         </div>
+        <div className="mt-10">
+          <AuthenticityBadges />
+        </div>
+        <RecommendedProducts currentProductId={productId} />
       </div>
     </div>
   );

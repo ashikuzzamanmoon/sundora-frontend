@@ -12,7 +12,7 @@
       "/images/products/1-million-thumb1.webp",
       "/images/products/1-million-thumb2.webp"
     ],
-    "description": "How to be the 1 Million among Millions? Be excessive with style...",
+    "description": "How to be the 1 Million among Millions? Be excessive with style. Overdo it. Just a little bit. Always be insolent: have the audacity to be too much. 1 Million Perfume. Sun-drenched leather with salty effects, that's hot to the touch. Addictive gold ingot. A powerful fragrance for men. Deliberately excessive. Olfactory Universe. Salty pulse: tuberous salty textured by amber woods. Leather opulence: accord solar leather patinated with notes of resin and pine.",
     "variantType": "size",
     "variants": [
       {
@@ -49,6 +49,21 @@
     "price": 6060,
     "discount": 40,
     "image": "/images/products/spicebomb.webp",
+    "gallery": [
+      "/images/products/spicebomb-thumb1.webp",
+      "/images/products/spicebomb-thumb2.webp"
+    ],
+    "description": "Fragrance Family: Woody, Spicy, Gourmand, Amber\n\nKey Notes: Lavender, Cinnamon, Saffron, Tobacco, Vanilla, Bourbon\n\nAbout the Fragrance:\nLaunched in 2015, Viktor & Rolf Spicebomb Extreme Eau de Parfum is an intensely fiery take on the original Spicebomb cologne. Created by perfumers Carlos Benaim and Jean-Christophe Hérault, this fragrance is an explosion of sensuality.\n\nFragrance Description:\nSpicebomb Extreme cologne is a longer-lasting extreme fragrance than the original Spicebomb. The spicy notes are enhanced by the combination of deeply aromatic lavender with an explosion of pepper and saffron that tantalizes the senses. The masculine notes of tobacco and bourbon fuse with warm vanilla to create a lingering essence that’ll leave them wanting more. This seductively brawny scent will quickly become your staple fall and winter fragrance.\n\nAbout the Bottle:\nSpicebomb Extreme EDP comes in a flacon shaped like a hand grenade encircled with a strapping copper ring. The striking yet sturdy flask is made for the man looking to make a statement. The fragrance is available in 90 ml and is engravable for ultimate customization.",
+    "variantType": "size",
+    "variants": [
+      {
+        "id": 201,
+        "name": "90ML",
+        "originalPrice": 10100,
+        "price": 6060,
+        "discount": 40
+      }
+    ],
     "isFavourite": true,
     "isNewArrival": false
   },
