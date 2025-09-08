@@ -8,6 +8,35 @@
     "price": 7395,
     "discount": 30,
     "image": "/images/products/1-million.webp",
+    "gallery": [
+      "/images/products/1-million-thumb1.webp",
+      "/images/products/1-million-thumb2.webp"
+    ],
+    "description": "How to be the 1 Million among Millions? Be excessive with style...",
+    "variantType": "size",
+    "variants": [
+      {
+        "id": 101,
+        "name": "50ML",
+        "originalPrice": 8700,
+        "price": 7395,
+        "discount": 15
+      },
+      {
+        "id": 102,
+        "name": "100ML",
+        "originalPrice": 12000,
+        "price": 8400,
+        "discount": 30
+      },
+      {
+        "id": 103,
+        "name": "200ML",
+        "originalPrice": 15000,
+        "price": 12000,
+        "discount": 20
+      }
+    ],
     "isFavourite": true,
     "isNewArrival": false
   },
@@ -44,6 +73,38 @@
     "price": 2800,
     "discount": 20,
     "image": "/images/products/mac-lipstick.webp",
+    "gallery": [
+      "/images/products/mac-lipstick-thumb1.webp",
+      "/images/products/mac-lipstick-thumb2.webp"
+    ],
+    "description": "A weightless moisture-matte lipstick that delivers a blur of soft-focus colour.",
+    "variantType": "color",
+    "variants": [
+      {
+        "id": 401,
+        "name": "Ruby Woo",
+        "hexCode": "#9B111E",
+        "originalPrice": 3500,
+        "price": 2800,
+        "discount": 20
+      },
+      {
+        "id": 402,
+        "name": "Velvet Teddy",
+        "hexCode": "#A16654",
+        "originalPrice": 3500,
+        "price": 2800,
+        "discount": 20
+      },
+      {
+        "id": 403,
+        "name": "Mehr",
+        "hexCode": "#B46A76",
+        "originalPrice": 3500,
+        "price": 3150,
+        "discount": 10
+      }
+    ],
     "isFavourite": true,
     "isNewArrival": false
   },
@@ -70,5 +131,125 @@
     "image": "/images/products/1861-naxos.webp",
     "isFavourite": true,
     "isNewArrival": false
+  },
+  {
+    "id": 7,
+    "brand": "MAC",
+    "name": "Studio Fix Powder Plus Foundation",
+    "type": "Foundation",
+    "originalPrice": 5100,
+    "price": 4080,
+    "discount": 20,
+    "image": "/images/products/foundation.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 8,
+    "brand": "JEAN PAUL GAULTIER",
+    "name": "Le Male Elixir Absolu",
+    "type": "Parfum",
+    "originalPrice": 10100,
+    "price": 8080,
+    "discount": 20,
+    "image": "/images/products/absolu.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 9,
+    "brand": "SMASHBOX",
+    "name": "Cover Shot Eye Palette",
+    "type": "Eye Palette",
+    "originalPrice": 4600,
+    "price": 3220,
+    "discount": 30,
+    "image": "/images/products/eye palatte.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 10,
+    "brand": "SMASHBOX",
+    "name": "Becca Shimmering Skin Perfector",
+    "type": "Pressed Highlighter",
+    "originalPrice": 4500,
+    "price": 3600,
+    "discount": 20,
+    "image": "/images/products/highlighter.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 11,
+    "brand": "CALVIN KLEIN",
+    "name": "Eternity For Women Amber Essence",
+    "type": "Parfum Intense",
+    "originalPrice": 10500,
+    "price": 5250,
+    "discount": 50,
+    "image": "/images/products/perfume intense.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 12,
+    "brand": "BOBBI BROWN COSMETICS",
+    "name": "Shimmer Brick Compact",
+    "type": "Compact",
+    "originalPrice": 7400,
+    "price": 5920,
+    "discount": 20,
+    "image": "/images/products/compact.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 13,
+    "brand": "DAVIDOFF",
+    "name": "Cool Elixir Parfum Intense",
+    "type": "Eau De Parfum",
+    "originalPrice": 10100,
+    "price": 6060,
+    "discount": 40,
+    "image": "/images/products/cool parfum intense.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 14,
+    "brand": "CALVIN KLEIN",
+    "name": "CK One Essence Parfum Intense",
+    "type": "Eau De Parfum",
+    "originalPrice": 8100,
+    "price": 4860,
+    "discount": 40,
+    "image": "/images/products/ck parfume intense.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 15,
+    "brand": "OSÉE",
+    "name": "Party Waves",
+    "type": "Hair Styler",
+    "originalPrice": 12000,
+    "price": 8400,
+    "discount": 30,
+    "image": "/images/products/party waves.webp",
+    "isFavourite": false,
+    "isNewArrival": true
+  },
+  {
+    "id": 16,
+    "brand": "MARC JACOBS",
+    "name": "Daisy Wild Intense Eau De Parfum",
+    "type": "Eau De Parfum",
+    "originalPrice": 11400,
+    "price": 5700,
+    "discount": 50,
+    "image": "/images/products/daisy wild parfum.webp",
+    "isFavourite": false,
+    "isNewArrival": true
   }
 ]

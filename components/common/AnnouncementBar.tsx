@@ -1,5 +1,5 @@
 // components/common/AnnouncementBar.tsx
-'use client'; // Marquee client-side কাজ করে, তাই এটি জরুরি
+'use client';
 
 import Marquee from 'react-fast-marquee';
 
