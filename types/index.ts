@@ -24,6 +24,9 @@ export interface BaseProduct {
   image: string;
   gallery?: string[];
   description?: string;
+  category?: string;
+  subCategory?: string;
+  gender?: string;
   isFavourite?: boolean;
   isNewArrival?: boolean;
 }

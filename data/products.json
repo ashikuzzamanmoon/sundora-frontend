@@ -14,6 +14,8 @@
     ],
     "description": "How to be the 1 Million among Millions? Be excessive with style. Overdo it. Just a little bit. Always be insolent: have the audacity to be too much. 1 Million Perfume. Sun-drenched leather with salty effects, that's hot to the touch. Addictive gold ingot. A powerful fragrance for men. Deliberately excessive. Olfactory Universe. Salty pulse: tuberous salty textured by amber woods. Leather opulence: accord solar leather patinated with notes of resin and pine.",
     "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
     "variants": [
       {
         "id": 101,
@@ -55,6 +57,8 @@
     ],
     "description": "Fragrance Family: Woody, Spicy, Gourmand, Amber\n\nKey Notes: Lavender, Cinnamon, Saffron, Tobacco, Vanilla, Bourbon\n\nAbout the Fragrance:\nLaunched in 2015, Viktor & Rolf Spicebomb Extreme Eau de Parfum is an intensely fiery take on the original Spicebomb cologne. Created by perfumers Carlos Benaim and Jean-Christophe Hérault, this fragrance is an explosion of sensuality.\n\nFragrance Description:\nSpicebomb Extreme cologne is a longer-lasting extreme fragrance than the original Spicebomb. The spicy notes are enhanced by the combination of deeply aromatic lavender with an explosion of pepper and saffron that tantalizes the senses. The masculine notes of tobacco and bourbon fuse with warm vanilla to create a lingering essence that’ll leave them wanting more. This seductively brawny scent will quickly become your staple fall and winter fragrance.\n\nAbout the Bottle:\nSpicebomb Extreme EDP comes in a flacon shaped like a hand grenade encircled with a strapping copper ring. The striking yet sturdy flask is made for the man looking to make a statement. The fragrance is available in 90 ml and is engravable for ultimate customization.",
     "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
     "variants": [
       {
         "id": 201,
@@ -62,6 +66,20 @@
         "originalPrice": 10100,
         "price": 6060,
         "discount": 40
+      },
+      {
+        "id": 202,
+        "name": "50ML",
+        "originalPrice": 8500,
+        "price": 5950,
+        "discount": 30
+      },
+      {
+        "id": 203,
+        "name": "150ML",
+        "originalPrice": 14000,
+        "price": 9100,
+        "discount": 35
       }
     ],
     "isFavourite": true,
@@ -76,6 +94,30 @@
     "price": 9840,
     "discount": 20,
     "image": "/images/products/azzaro.webp",
+    "gallery": [
+      "/images/products/azzaro-thumb1.webp",
+      "/images/products/azzaro-thumb2.webp"
+    ],
+    "description": "Azzaro The Most Wanted is the fragrance of a daring man, with an infinite power of attraction. More than a fragrance, it is the ultimate weapon of seduction. Its key notes of cardamom, toffee accord, and amber wood provide a spicy and ambery signature that is both intense and unforgettable.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
+    "variants": [
+      {
+        "id": 301,
+        "name": "100ML",
+        "originalPrice": 12300,
+        "price": 9840,
+        "discount": 20
+      },
+      {
+        "id": 302,
+        "name": "50ML",
+        "originalPrice": 9500,
+        "price": 8075,
+        "discount": 15
+      }
+    ],
     "isFavourite": true,
     "isNewArrival": false
   },
@@ -94,6 +136,9 @@
     ],
     "description": "A weightless moisture-matte lipstick that delivers a blur of soft-focus colour.",
     "variantType": "color",
+    "category": "Makeup",
+    "subCategory": "Lipstick",
+    "gender": "Women",
     "variants": [
       {
         "id": 401,
@@ -130,8 +175,32 @@
     "type": "Eau De Parfum",
     "originalPrice": 9100,
     "price": 7280,
-    "discount": 40,
+    "discount": 20,
     "image": "/images/products/phantom.webp",
+    "gallery": [
+      "/images/products/phantom-thumb1.webp",
+      "/images/products/phantom-thumb2.webp"
+    ],
+    "description": "Embrace the darker side of the Phantom aura. This intense version amplifies the addictive creamy lavender and vanilla with a surprising twist of frosty orange blossom and rich moss. A futuristic aromatic fragrance for the modern man.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
+    "variants": [
+      {
+        "id": 501,
+        "name": "50ML",
+        "originalPrice": 9100,
+        "price": 7280,
+        "discount": 20
+      },
+      {
+        "id": 502,
+        "name": "100ML",
+        "originalPrice": 12500,
+        "price": 9375,
+        "discount": 25
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": false
   },
@@ -144,6 +213,23 @@
     "price": 23023,
     "discount": 30,
     "image": "/images/products/1861-naxos.webp",
+    "gallery": [
+      "/images/products/1861-naxos-thumb1.webp",
+      "/images/products/1861-naxos-thumb2.webp"
+    ],
+    "description": "A tribute to the grandeur of Sicily. Naxos opens with crisp citrus notes of bergamot and lemon, leading into a heart of sweet honey and jasmine. The fragrance settles into a rich and opulent base of tobacco leaf, tonka bean, and vanilla. A true masterpiece of Italian perfumery.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Unisex",
+    "variants": [
+      {
+        "id": 601,
+        "name": "100ML",
+        "originalPrice": 32900,
+        "price": 23023,
+        "discount": 30
+      }
+    ],
     "isFavourite": true,
     "isNewArrival": false
   },
@@ -156,6 +242,41 @@
     "price": 4080,
     "discount": 20,
     "image": "/images/products/foundation.webp",
+    "gallery": [
+      "/images/products/foundation-thumb1.webp",
+      "/images/products/foundation-thumb2.webp"
+    ],
+    "description": "A one-step powder and foundation that gives skin a smooth, flawless, all-matte finish with medium-to-full coverage. Long-wearing, velvety texture allows skin to breathe. Available in a wide range of colours.",
+    "variantType": "color",
+    "category": "Makeup",
+    "subCategory": "Face",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 701,
+        "name": "NC20",
+        "hexCode": "#F0C9A3",
+        "originalPrice": 5100,
+        "price": 4080,
+        "discount": 20
+      },
+      {
+        "id": 702,
+        "name": "NC42",
+        "hexCode": "#D9A06D",
+        "originalPrice": 5100,
+        "price": 4080,
+        "discount": 20
+      },
+      {
+        "id": 703,
+        "name": "NW25",
+        "hexCode": "#E6B999",
+        "originalPrice": 5100,
+        "price": 4335,
+        "discount": 15
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -168,6 +289,30 @@
     "price": 8080,
     "discount": 20,
     "image": "/images/products/absolu.webp",
+    "gallery": [
+      "/images/products/absolu-thumb1.webp",
+      "/images/products/absolu-thumb2.webp"
+    ],
+    "description": "An intensely addictive amber aromatic fragrance. This powerful elixir features fresh mint and soothing lavender, intensified by the richness of benzoin and a warm vanilla heart. Housed in the iconic male torso bottle, now dipped in gold.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
+    "variants": [
+      {
+        "id": 801,
+        "name": "75ML",
+        "originalPrice": 10100,
+        "price": 8080,
+        "discount": 20
+      },
+      {
+        "id": 802,
+        "name": "125ML",
+        "originalPrice": 14000,
+        "price": 10500,
+        "discount": 25
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -180,6 +325,33 @@
     "price": 3220,
     "discount": 30,
     "image": "/images/products/eye palatte.webp",
+    "gallery": [
+      "/images/products/eye-palatte-thumb1.webp",
+      "/images/products/eye-palatte-thumb2.webp"
+    ],
+    "description": "A purse-sized, pigment-powered eyeshadow palette made to mesmerize. Each palette has a curated mix of colors, formulas, and finishes so you can nail the latest trends and create your own looks.",
+    "variantType": "color",
+    "category": "Makeup",
+    "subCategory": "Eyes",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 901,
+        "name": "Ablaze",
+        "hexCode": "#E07B5C",
+        "originalPrice": 4600,
+        "price": 3220,
+        "discount": 30
+      },
+      {
+        "id": 902,
+        "name": "Punked",
+        "hexCode": "#8B7E93",
+        "originalPrice": 4600,
+        "price": 3680,
+        "discount": 20
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -192,6 +364,33 @@
     "price": 3600,
     "discount": 20,
     "image": "/images/products/highlighter.webp",
+    "gallery": [
+      "/images/products/highlighter-thumb1.webp",
+      "/images/products/highlighter-thumb2.webp"
+    ],
+    "description": "A best-selling creamy highlighter powder that lights up your features with a high-impact, ultra-reflective glow. Infused with ultra-fine, multi-toned luminescent pearls that adjust to your skin’s undertones.",
+    "variantType": "color",
+    "category": "Makeup",
+    "subCategory": "Face",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 1001,
+        "name": "Champagne Pop",
+        "hexCode": "#F3D298",
+        "originalPrice": 4500,
+        "price": 3600,
+        "discount": 20
+      },
+      {
+        "id": 1002,
+        "name": "Opal",
+        "hexCode": "#E2C4A2",
+        "originalPrice": 4500,
+        "price": 3600,
+        "discount": 20
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -204,6 +403,30 @@
     "price": 5250,
     "discount": 50,
     "image": "/images/products/perfume intense.webp",
+    "gallery": [
+      "/images/products/perfume-intense-thumb1.webp",
+      "/images/products/perfume-intense-thumb2.webp"
+    ],
+    "description": "A sensual and warm fragrance inspired by the golden hour of sunset. This amber floral scent combines lush gardenia, rich coconut water, and a warm amber base for a truly captivating experience.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 1101,
+        "name": "100ML",
+        "originalPrice": 10500,
+        "price": 5250,
+        "discount": 50
+      },
+      {
+        "id": 1102,
+        "name": "50ML",
+        "originalPrice": 8000,
+        "price": 4800,
+        "discount": 40
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -216,6 +439,33 @@
     "price": 5920,
     "discount": 20,
     "image": "/images/products/compact.webp",
+    "gallery": [
+      "/images/products/compact-thumb1.webp",
+      "/images/products/compact-thumb2.webp"
+    ],
+    "description": "This iconic, shimmering, brush-on powder creates a deep, bronzy glow. Handmade in Italy, it features superfine pigments that reflect radiance and light for a luminous look.",
+    "variantType": "color",
+    "category": "Makeup",
+    "subCategory": "Face",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 1201,
+        "name": "Bronze",
+        "hexCode": "#C8936C",
+        "originalPrice": 7400,
+        "price": 5920,
+        "discount": 20
+      },
+      {
+        "id": 1202,
+        "name": "Rose",
+        "hexCode": "#DDA8A2",
+        "originalPrice": 7400,
+        "price": 6290,
+        "discount": 15
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -228,6 +478,23 @@
     "price": 6060,
     "discount": 40,
     "image": "/images/products/cool parfum intense.webp",
+    "gallery": [
+      "/images/products/cool-parfum-intense-thumb1.webp",
+      "/images/products/cool-parfum-intense-thumb2.webp"
+    ],
+    "description": "An intense and exhilarating reinterpretation of the classic Cool Water. This fragrance pushes the boundaries with an electrifying blend of green mandarin, vetiver, and rich amber notes. A powerful statement of freshness and masculinity.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Men",
+    "variants": [
+      {
+        "id": 1301,
+        "name": "100ML",
+        "originalPrice": 10100,
+        "price": 6060,
+        "discount": 40
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -240,6 +507,30 @@
     "price": 4860,
     "discount": 40,
     "image": "/images/products/ck parfume intense.webp",
+    "gallery": [
+      "/images/products/ck-parfume-intense-thumb1.webp",
+      "/images/products/ck-parfume-intense-thumb2.webp"
+    ],
+    "description": "The iconic CK One fragrance, reimagined as a more intense and vibrant scent. It captures the spirit of the original with a modern twist, blending notes of sparkling ginger, fresh cardamom, and warm woods for a scent that is both familiar and new.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Unisex",
+    "variants": [
+      {
+        "id": 1401,
+        "name": "100ML",
+        "originalPrice": 8100,
+        "price": 4860,
+        "discount": 40
+      },
+      {
+        "id": 1402,
+        "name": "50ML",
+        "originalPrice": 6500,
+        "price": 4550,
+        "discount": 30
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -252,6 +543,33 @@
     "price": 8400,
     "discount": 30,
     "image": "/images/products/party waves.webp",
+    "gallery": [
+      "/images/products/party-waves-thumb1.webp",
+      "/images/products/party-waves-thumb2.webp"
+    ],
+    "description": "Create effortless, beachy waves with the OSÉE Party Waves hair styler. This innovative tool uses triple-barrel technology to quickly and easily create natural-looking waves for a perfect 'just-off-the-beach' look. Suitable for all hair types.",
+    "variantType": "color",
+    "category": "Hair Care",
+    "subCategory": "Styling Tools",
+    "gender": "Unisex",
+    "variants": [
+      {
+        "id": 1501,
+        "name": "Rose Gold",
+        "hexCode": "#B76E79",
+        "originalPrice": 12000,
+        "price": 8400,
+        "discount": 30
+      },
+      {
+        "id": 1502,
+        "name": "Classic Black",
+        "hexCode": "#000000",
+        "originalPrice": 12000,
+        "price": 9000,
+        "discount": 25
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   },
@@ -264,6 +582,30 @@
     "price": 5700,
     "discount": 50,
     "image": "/images/products/daisy wild parfum.webp",
+    "gallery": [
+      "/images/products/daisy-wild-parfum-thumb1.webp",
+      "/images/products/daisy-wild-parfum-thumb2.webp"
+    ],
+    "description": "A bold and free-spirited fragrance. Daisy Wild is a vibrant blend of banana blossom, jasmine, and vetiver. This intense version adds depth and longevity, capturing the untamed beauty of a field of wildflowers.",
+    "variantType": "size",
+    "category": "Perfume",
+    "gender": "Women",
+    "variants": [
+      {
+        "id": 1601,
+        "name": "100ML",
+        "originalPrice": 11400,
+        "price": 5700,
+        "discount": 50
+      },
+      {
+        "id": 1602,
+        "name": "50ML",
+        "originalPrice": 8500,
+        "price": 5100,
+        "discount": 40
+      }
+    ],
     "isFavourite": false,
     "isNewArrival": true
   }
