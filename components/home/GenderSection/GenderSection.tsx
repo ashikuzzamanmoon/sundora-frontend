@@ -13,8 +13,8 @@ const GenderSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {/* কার্ড ১: For Him */}
-          <Link href="/shop/him" className="block group">
+          {/* card 1: For Him */}
+          <Link href="/category/men" className="block group">
             <div className="relative overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
               <Image
                 src="/images/gender/for-him.webp"
@@ -26,8 +26,8 @@ const GenderSection = () => {
             </div>
           </Link>
 
-          {/* কার্ড ২: For Her */}
-          <Link href="/shop/her" className="block group">
+          {/* card 2: For Her */}
+          <Link href="/category/women" className="block group">
             <div className="relative overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
               <Image
                 src="/images/gender/for-her.webp"

@@ -14,8 +14,7 @@
     ],
     "description": "How to be the 1 Million among Millions? Be excessive with style. Overdo it. Just a little bit. Always be insolent: have the audacity to be too much. 1 Million Perfume. Sun-drenched leather with salty effects, that's hot to the touch. Addictive gold ingot. A powerful fragrance for men. Deliberately excessive. Olfactory Universe. Salty pulse: tuberous salty textured by amber woods. Leather opulence: accord solar leather patinated with notes of resin and pine.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+    "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 101,
@@ -40,11 +39,12 @@
       }
     ],
     "isFavourite": true,
-    "isNewArrival": false
+    "isNewArrival": false,
+    "isSale": true
   },
   {
     "id": 2,
-    "brand": "VIKTOR & ROLF",
+    "brand": "VIKTOR and ROLF",
     "name": "Spicebomb Extreme Eau De Parfum",
     "type": "Eau De Parfum",
     "originalPrice": 10100,
@@ -57,8 +57,7 @@
     ],
     "description": "Fragrance Family: Woody, Spicy, Gourmand, Amber\n\nKey Notes: Lavender, Cinnamon, Saffron, Tobacco, Vanilla, Bourbon\n\nAbout the Fragrance:\nLaunched in 2015, Viktor & Rolf Spicebomb Extreme Eau de Parfum is an intensely fiery take on the original Spicebomb cologne. Created by perfumers Carlos Benaim and Jean-Christophe Hérault, this fragrance is an explosion of sensuality.\n\nFragrance Description:\nSpicebomb Extreme cologne is a longer-lasting extreme fragrance than the original Spicebomb. The spicy notes are enhanced by the combination of deeply aromatic lavender with an explosion of pepper and saffron that tantalizes the senses. The masculine notes of tobacco and bourbon fuse with warm vanilla to create a lingering essence that’ll leave them wanting more. This seductively brawny scent will quickly become your staple fall and winter fragrance.\n\nAbout the Bottle:\nSpicebomb Extreme EDP comes in a flacon shaped like a hand grenade encircled with a strapping copper ring. The striking yet sturdy flask is made for the man looking to make a statement. The fragrance is available in 90 ml and is engravable for ultimate customization.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+    "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 201,
@@ -83,7 +82,8 @@
       }
     ],
     "isFavourite": true,
-    "isNewArrival": false
+    "isNewArrival": false,
+    "isSale": true
   },
   {
     "id": 3,
@@ -100,8 +100,7 @@
     ],
     "description": "Azzaro The Most Wanted is the fragrance of a daring man, with an infinite power of attraction. More than a fragrance, it is the ultimate weapon of seduction. Its key notes of cardamom, toffee accord, and amber wood provide a spicy and ambery signature that is both intense and unforgettable.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+    "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 301,
@@ -119,7 +118,8 @@
       }
     ],
     "isFavourite": true,
-    "isNewArrival": false
+    "isNewArrival": false,
+    "isSale": true
   },
   {
     "id": 4,
@@ -136,9 +136,7 @@
     ],
     "description": "A weightless moisture-matte lipstick that delivers a blur of soft-focus colour.",
     "variantType": "color",
-    "category": "Makeup",
-    "subCategory": "Lipstick",
-    "gender": "Women",
+    "categories": ["Makeup", "Lipstick", "Women"],
     "variants": [
       {
         "id": 401,
@@ -166,7 +164,8 @@
       }
     ],
     "isFavourite": true,
-    "isNewArrival": false
+    "isNewArrival": false,
+    "isSale": false
   },
   {
     "id": 5,
@@ -183,8 +182,7 @@
     ],
     "description": "Embrace the darker side of the Phantom aura. This intense version amplifies the addictive creamy lavender and vanilla with a surprising twist of frosty orange blossom and rich moss. A futuristic aromatic fragrance for the modern man.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+    "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 501,
@@ -202,7 +200,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": false
+    "isNewArrival": true,
+    "isSale": false
   },
   {
     "id": 6,
@@ -219,8 +218,7 @@
     ],
     "description": "A tribute to the grandeur of Sicily. Naxos opens with crisp citrus notes of bergamot and lemon, leading into a heart of sweet honey and jasmine. The fragrance settles into a rich and opulent base of tobacco leaf, tonka bean, and vanilla. A true masterpiece of Italian perfumery.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Unisex",
+    "categories": ["Fragrance", "Unisex"],
     "variants": [
       {
         "id": 601,
@@ -231,7 +229,8 @@
       }
     ],
     "isFavourite": true,
-    "isNewArrival": false
+    "isNewArrival": false,
+    "isSale": true
   },
   {
     "id": 7,
@@ -248,9 +247,7 @@
     ],
     "description": "A one-step powder and foundation that gives skin a smooth, flawless, all-matte finish with medium-to-full coverage. Long-wearing, velvety texture allows skin to breathe. Available in a wide range of colours.",
     "variantType": "color",
-    "category": "Makeup",
-    "subCategory": "Face",
-    "gender": "Women",
+    "categories": ["Makeup", "Face", "Women"],
     "variants": [
       {
         "id": 701,
@@ -278,7 +275,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": true
   },
   {
     "id": 8,
@@ -295,8 +293,7 @@
     ],
     "description": "An intensely addictive amber aromatic fragrance. This powerful elixir features fresh mint and soothing lavender, intensified by the richness of benzoin and a warm vanilla heart. Housed in the iconic male torso bottle, now dipped in gold.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+    "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 801,
@@ -314,7 +311,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": false
   },
   {
     "id": 9,
@@ -331,9 +329,7 @@
     ],
     "description": "A purse-sized, pigment-powered eyeshadow palette made to mesmerize. Each palette has a curated mix of colors, formulas, and finishes so you can nail the latest trends and create your own looks.",
     "variantType": "color",
-    "category": "Makeup",
-    "subCategory": "Eyes",
-    "gender": "Women",
+    "categories": ["Makeup", "Eyes", "Women"],
     "variants": [
       {
         "id": 901,
@@ -353,7 +349,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": false
   },
   {
     "id": 10,
@@ -370,9 +367,7 @@
     ],
     "description": "A best-selling creamy highlighter powder that lights up your features with a high-impact, ultra-reflective glow. Infused with ultra-fine, multi-toned luminescent pearls that adjust to your skin’s undertones.",
     "variantType": "color",
-    "category": "Makeup",
-    "subCategory": "Face",
-    "gender": "Women",
+    "categories": ["Skincare", "Face", "Women"],
     "variants": [
       {
         "id": 1001,
@@ -392,7 +387,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": false
   },
   {
     "id": 11,
@@ -409,8 +405,7 @@
     ],
     "description": "A sensual and warm fragrance inspired by the golden hour of sunset. This amber floral scent combines lush gardenia, rich coconut water, and a warm amber base for a truly captivating experience.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Women",
+    "categories": ["Fragrance", "Women"],
     "variants": [
       {
         "id": 1101,
@@ -428,7 +423,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": true
   },
   {
     "id": 12,
@@ -445,9 +441,7 @@
     ],
     "description": "This iconic, shimmering, brush-on powder creates a deep, bronzy glow. Handmade in Italy, it features superfine pigments that reflect radiance and light for a luminous look.",
     "variantType": "color",
-    "category": "Makeup",
-    "subCategory": "Face",
-    "gender": "Women",
+    "categories": ["Skincare", "Face", "Women"],
     "variants": [
       {
         "id": 1201,
@@ -467,7 +461,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": false
   },
   {
     "id": 13,
@@ -484,8 +479,7 @@
     ],
     "description": "An intense and exhilarating reinterpretation of the classic Cool Water. This fragrance pushes the boundaries with an electrifying blend of green mandarin, vetiver, and rich amber notes. A powerful statement of freshness and masculinity.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Men",
+   "categories": ["Fragrance", "Men"],
     "variants": [
       {
         "id": 1301,
@@ -513,8 +507,9 @@
     ],
     "description": "The iconic CK One fragrance, reimagined as a more intense and vibrant scent. It captures the spirit of the original with a modern twist, blending notes of sparkling ginger, fresh cardamom, and warm woods for a scent that is both familiar and new.",
     "variantType": "size",
-    "category": "Perfume",
+    "category": "Fragrance",
     "gender": "Unisex",
+    "categories": ["Fragrance", "Unisex"],
     "variants": [
       {
         "id": 1401,
@@ -532,7 +527,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": true
   },
   {
     "id": 15,
@@ -549,9 +545,7 @@
     ],
     "description": "Create effortless, beachy waves with the OSÉE Party Waves hair styler. This innovative tool uses triple-barrel technology to quickly and easily create natural-looking waves for a perfect 'just-off-the-beach' look. Suitable for all hair types.",
     "variantType": "color",
-    "category": "Hair Care",
-    "subCategory": "Styling Tools",
-    "gender": "Unisex",
+    "categories": ["Hair and Body", "Styling Tools", "Unisex"],
     "variants": [
       {
         "id": 1501,
@@ -571,7 +565,8 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": true
   },
   {
     "id": 16,
@@ -588,8 +583,7 @@
     ],
     "description": "A bold and free-spirited fragrance. Daisy Wild is a vibrant blend of banana blossom, jasmine, and vetiver. This intense version adds depth and longevity, capturing the untamed beauty of a field of wildflowers.",
     "variantType": "size",
-    "category": "Perfume",
-    "gender": "Women",
+    "categories": ["Fragrance", "Women"],
     "variants": [
       {
         "id": 1601,
@@ -607,6 +601,35 @@
       }
     ],
     "isFavourite": false,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "isSale": true
+  },
+  {
+    "id": 17,
+    "brand": "YANKEE CANDLE",
+    "name": "Midnight Jasmine Candle",
+    "originalPrice": 11400,
+    "price": 5700,
+    "discount": 50,
+    "image": "/images/products/yankee-candle.webp",
+    "gallery": [
+      "/images/products/yankee-candle-thumb1.webp",
+      "/images/products/yankee-candle-thumb2.webp"
+    ],
+    "description": "A seductively lush perfume of water jasmine, sweet honeysuckle, neroli, and mandarin blossom.",
+    "variantType": "size",
+    "categories": ["Candle and Home", "Scented Candle", "Unisex"],
+    "variants": [
+      {
+        "id": 1701,
+        "name": "Large Jar",
+        "originalPrice": 3500,
+        "price": 2800,
+        "discount": 20
+      }
+    ],
+    "isFavourite": true,
+    "isNewArrival": false,
+    "isSale": false
   }
 ]

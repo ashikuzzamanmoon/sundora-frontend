@@ -24,11 +24,13 @@ export interface BaseProduct {
   image: string;
   gallery?: string[];
   description?: string;
-  category?: string;
-  subCategory?: string;
-  gender?: string;
+  // category?: string;
+  // subCategory?: string;
+  // gender?: string;
   isFavourite?: boolean;
   isNewArrival?: boolean;
+  isSale?: boolean; 
+  categories?: string[]; 
 }
 // সাইজ ভ্যারিয়েন্টসহ প্রোডাক্ট
 export interface ProductWithSizeVariants extends BaseProduct {

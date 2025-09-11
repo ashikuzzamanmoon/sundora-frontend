@@ -31,14 +31,14 @@ const Navbar = () => {
   const searchContainerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
-    { name: "SALE", href: "/sale" },
-    { name: "NEW", href: "/new" },
-    { name: "BRANDS", href: "/brands" },
-    { name: "FRAGRANCE", href: "/fragrance" },
-    { name: "SKINCARE", href: "/skincare" },
-    { name: "MAKEUP", href: "/makeup" },
-    { name: "HAIR & BODY", href: "/hair-body" },
-    { name: "CANDLE & HOME", href: "/candle-home" },
+    { name: "SALE", href: "/category/sale" }, // Assuming 'sale' is a category
+    { name: "NEW", href: "/category/new-arrivals" },   // Assuming 'new' is a category
+    { name: "BRANDS", href: "/brands" }, // This might be a different page
+    { name: "FRAGRANCE", href: "/category/fragrance" },
+    { name: "SKINCARE", href: "/category/skincare" },
+    { name: "MAKEUP", href: "/category/makeup" },
+    { name: "HAIR and BODY", href: "/category/hair-and-body" }, 
+    { name: "CANDLE and HOME", href: "/category/candle-and-home" },
   ];
 
   useEffect(() => {
