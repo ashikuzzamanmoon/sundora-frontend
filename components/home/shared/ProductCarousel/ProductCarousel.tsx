@@ -5,17 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaCarouselType } from "embla-carousel";
 import ProductCard from "@/components/products/ProductCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-interface Product {
-  id: number;
-  brand: string;
-  name: string;
-  type: string;
-  originalPrice: number;
-  price: number;
-  discount: number;
-  image: string;
-}
+import { Product } from "@/types";
 
 interface ProductCarouselProps {
   title: string;

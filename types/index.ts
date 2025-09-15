@@ -24,13 +24,10 @@ export interface BaseProduct {
   image: string;
   gallery?: string[];
   description?: string;
-  // category?: string;
-  // subCategory?: string;
-  // gender?: string;
   isFavourite?: boolean;
   isNewArrival?: boolean;
-  isSale?: boolean; 
-  categories?: string[]; 
+  isSale?: boolean;
+  categories?: string[];
 }
 // সাইজ ভ্যারিয়েন্টসহ প্রোডাক্ট
 export interface ProductWithSizeVariants extends BaseProduct {
@@ -44,3 +41,20 @@ export interface ProductWithColorVariants extends BaseProduct {
 }
 // সব ধরনের প্রোডাক্টের জন্য একটি Union Type
 export type Product = ProductWithSizeVariants | ProductWithColorVariants;
+
+// স্টোরি পেজের জন্য নতুন টাইপ যোগ করা হলো
+export interface Story {
+  id: number;
+  title: string;
+  image: string;
+  href: string;
+  showTitleInPage: boolean; // টাইটেল দেখানো হবে কিনা তা নিয়ন্ত্রণের জন্য
+  content?: ContentBlock[];
+}
+
+export interface ContentBlock {
+  type: "image" | "paragraph" | "subheading" | "productCarousel";
+  text?: string;
+  src?: string;
+  productIds?: number[];
+}
