@@ -51,7 +51,10 @@ const CategoryPage = () => {
     if (!slug) return;
     let productsToShow: Product[] = [];
     let title = "";
-    if (slug === "sale") {
+    if (slug === "all") {
+      productsToShow = allProducts;
+      title = "All Products";
+    } else if (slug === "sale") {
       productsToShow = allProducts.filter((p) => p.isSale);
       title = "Sale";
     } else if (slug === "new-arrivals") {
