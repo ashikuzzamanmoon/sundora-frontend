@@ -32,17 +32,6 @@ const Navbar = () => {
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const searchContainerRef = useRef<HTMLDivElement>(null);
 
-  const navLinks = [
-    { name: "SALE", href: "/category/sale" },
-    { name: "NEW", href: "/category/new-arrivals" },
-    { name: "BRANDS", href: "/brands" },
-    { name: "FRAGRANCE", href: "/category/fragrance" },
-    { name: "SKINCARE", href: "/category/skincare" },
-    { name: "MAKEUP", href: "/category/makeup" },
-    { name: "HAIR and BODY", href: "/category/hair-and-body" },
-    { name: "CANDLE and HOME", href: "/category/candle-and-home" },
-  ];
-
   useEffect(() => {
     if (searchTerm.trim() === "") {
       setSearchResults([]);
