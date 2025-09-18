@@ -8,10 +8,8 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  // কার্ডে দেখানোর জন্য প্রথম ভ্যারিয়েন্টটি নেওয়া হলো
   const displayVariant = product.variants?.[0];
 
-  // যদি কোনো কারণে ভ্যারিয়েন্ট না থাকে, তাহলে কার্ডটি দেখানো হবে না
   if (!displayVariant) {
     return null;
   }

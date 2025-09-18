@@ -1,0 +1,65 @@
+[
+  {
+    "name": "SALE",
+    "href": "/category/sale"
+  },
+  {
+    "name": "NEW",
+    "href": "/category/new-arrivals"
+  },
+  {
+    "name": "BRANDS",
+    "href": "/brands"
+  },
+  {
+    "name": "FRAGRANCE",
+    "href": "/category/fragrance",
+    "subNavigation": [
+      { "name": "All Fragrance", "href": "/category/fragrance" },
+      { "name": "Men", "href": "/category/men" },
+      { "name": "Women", "href": "/category/women" },
+      { "name": "Unisex", "href": "/category/unisex" }
+    ],
+    "featuredProductIds": [1, 2, 6, 13]
+  },
+  {
+    "name": "SKINCARE",
+    "href": "/category/skincare",
+    "subNavigation": [
+      { "name": "All Skincare", "href": "/category/skincare" },
+      { "name": "Face", "href": "/category/face" },
+      { "name": "Cleanser", "href": "/category/cleanser" },
+      { "name": "Highlighter", "href": "/category/highlighter" }
+    ],
+    "featuredProductIds": [10, 12]
+  },
+  {
+    "name": "MAKEUP",
+    "href": "/category/makeup",
+    "subNavigation": [
+      { "name": "All Makeup", "href": "/category/makeup" },
+      { "name": "Lipstick", "href": "/category/lipstick" },
+      { "name": "Eyes", "href": "/category/eyes" },
+      { "name": "Face", "href": "/category/face" }
+    ],
+    "featuredProductIds": [4, 7, 9]
+  },
+  {
+    "name": "HAIR AND BODY",
+    "href": "/category/hair-and-body",
+    "subNavigation": [
+      { "name": "All Hair & Body", "href": "/category/hair-and-body" },
+      { "name": "Styling Tools", "href": "/category/styling-tools" }
+    ],
+    "featuredProductIds": [15]
+  },
+  {
+    "name": "CANDLE AND HOME",
+    "href": "/category/candle-and-home",
+    "subNavigation": [
+      { "name": "All Candle & Home", "href": "/category/candle-and-home" },
+      { "name": "Scented Candle", "href": "/category/scented-candle" }
+    ],
+    "featuredProductIds": [17]
+  }
+]

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -15,6 +15,8 @@ import {
 import allProducts from "@/data/products.json";
 import { useCart } from "@/context/CartContext";
 import CartModal from "@/components/cart/CartModal";
+import navigationData from "@/data/navigation.json";
+import { Transition } from '@headlessui/react';
 
 interface Product {
   id: number;
@@ -24,20 +26,20 @@ interface Product {
 }
 
 const Navbar = () => {
-  const { toggleCart, itemCount } = useCart(); // useCart থেকে ফাংশন ও স্টেট নিন
+  const { toggleCart, itemCount } = useCart();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const searchContainerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
-    { name: "SALE", href: "/category/sale" }, // Assuming 'sale' is a category
-    { name: "NEW", href: "/category/new-arrivals" },   // Assuming 'new' is a category
-    { name: "BRANDS", href: "/brands" }, // This might be a different page
+    { name: "SALE", href: "/category/sale" },
+    { name: "NEW", href: "/category/new-arrivals" },
+    { name: "BRANDS", href: "/brands" },
     { name: "FRAGRANCE", href: "/category/fragrance" },
     { name: "SKINCARE", href: "/category/skincare" },
     { name: "MAKEUP", href: "/category/makeup" },
-    { name: "HAIR and BODY", href: "/category/hair-and-body" }, 
+    { name: "HAIR and BODY", href: "/category/hair-and-body" },
     { name: "CANDLE and HOME", href: "/category/candle-and-home" },
   ];
 
@@ -70,6 +72,23 @@ const Navbar = () => {
   const closeSearch = () => {
     setIsSearchOpen(false);
     setSearchTerm("");
+  };
+
+  // Mega Menu-এর জন্য নতুন স্টেট
+  const [openPopover, setOpenPopover] = useState<string | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (name: string) => {
+    if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+    }
+    setOpenPopover(name);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+        setOpenPopover(null);
+    }, 200); // 200ms delay to allow moving mouse into the panel
   };
 
   return (
@@ -200,25 +219,71 @@ const Navbar = () => {
             )}
           </div>
         </div>
-
-        {/* ===== NAVIGATION LINKS ===== */}
-        <nav className="hidden md:block sticky top-0 z-40 bg-white">
-          <div className="container mx-auto px-6 flex justify-center items-center h-12">
-            <ul className="flex items-center space-x-16 text-sm font-medium tracking-wider">
-              {navLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-700 hover:text-black uppercase"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </nav>
       </header>
+      {/* ===== NAVIGATION LINKS ===== */}
+      <nav className="hidden md:block sticky top-0 z-40 bg-white shadow-md">
+        <div className="container mx-auto px-6 flex justify-center items-center h-12">
+          <ul className="flex items-center space-x-16 text-sm font-medium tracking-wider">
+            {navigationData.map((item) => (
+              <li 
+                key={item.name} 
+                onMouseEnter={() => item.subNavigation && handleMouseEnter(item.name)} 
+                onMouseLeave={() => item.subNavigation && handleMouseLeave()}
+                className="relative"
+              >
+                <Link 
+                    href={item.href} 
+                    className={`uppercase outline-none transition-colors ${openPopover === item.name ? 'text-teal-600' : 'text-gray-700 hover:text-black'}`}
+                >
+                  {item.name}
+                </Link>
+                {item.subNavigation && (
+                  <Transition
+                    show={openPopover === item.name}
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition ease-in duration-150"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="absolute left-1/2 -translate-x-1/2 pt-3 w-screen max-w-5xl px-4 z-20">
+                      <div className="overflow-hidden rounded shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="relative grid gap-8 bg-white p-7 grid-cols-4">
+                          {/* left side link */}
+                          <div className="col-span-1 space-y-3">
+                            <h3 className="font-bold text-base">{item.name}</h3>
+                            {item.subNavigation.map((subItem) => (
+                              <Link key={subItem.name} href={subItem.href} className="block text-gray-500 hover:text-black hover:underline">{subItem.name}</Link>
+                            ))}
+                          </div>
+                          {/* right side product */}
+                          <div className="col-span-3">
+                            <p className="text-gray-500 mb-2">We recommend:</p>
+                            <div className="grid grid-cols-4 gap-4">
+                              {allProducts.filter(p => item.featuredProductIds?.includes(p.id)).map(product => (
+                                <Link href={`/products/${product.id}`} key={product.id} className="group">
+                                  <div className="bg-gray-100 rounded-md overflow-hidden aspect-square">
+                                    <Image src={product.image} alt={product.name} width={150} height={150} className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
+                                  </div>
+                                  <p className="text-xs mt-2 font-semibold uppercase">{product.brand}</p>
+                                  <p className="text-xs text-gray-600 line-clamp-1">{product.name}</p>
+                                  <p className="text-sm font-bold mt-1">From ৳{product.variants[0].price.toLocaleString()}</p>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Transition>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
       <CartModal />
     </>
   );

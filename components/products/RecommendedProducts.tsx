@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "@/components/products/ProductCard";
 import allProductsData from "@/data/products.json";
-import { Product } from "@/types"; // পরিবর্তন ১: সেন্ট্রাল টাইপ ফাইল থেকে ইম্পোর্ট
+import { Product } from "@/types";
 
 const allProducts: Product[] = allProductsData as Product[];
 
