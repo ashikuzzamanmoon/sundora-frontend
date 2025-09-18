@@ -31,6 +31,8 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState<Product[]>([]);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const [openPopover, setOpenPopover] = useState<string | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (searchTerm.trim() === "") {
@@ -63,9 +65,6 @@ const Navbar = () => {
     setSearchTerm("");
   };
 
-  // Mega Menu-এর জন্য নতুন স্টেট
-  const [openPopover, setOpenPopover] = useState<string | null>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (name: string) => {
     if (timeoutRef.current) {
