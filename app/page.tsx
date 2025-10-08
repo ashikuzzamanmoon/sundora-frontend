@@ -7,7 +7,10 @@ import GenderSection from "@/components/home/GenderSection/GenderSection";
 import HeroSlider from "@/components/home/HeroSlider/HeroSlider";
 import ProductCarousel from "@/components/home/shared/ProductCarousel/ProductCarousel";
 import StoriesSection from "@/components/home/StoriesSection/StoriesSection";
-import allProducts from "@/data/products.json";
+import allProductsData from "@/data/products.json";
+import { Product } from "@/types";
+
+const allProducts: Product[] = allProductsData as Product[];
 
 const Home = () => {
   const favouriteProducts = allProducts.filter(
